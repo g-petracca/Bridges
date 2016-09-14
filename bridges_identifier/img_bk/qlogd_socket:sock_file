@@ -1,0 +1,18 @@
+// graph_name
+digraph {
+	qlogd
+	qlogd
+		qlogd -> qlogd [label="open > open"]
+	qlogd
+	qlogd
+		qlogd -> qlogd [label="setattr > getattr"]
+	qlogd
+	appdomain
+		appdomain -> qlogd [label="write > read"]
+	qlogd
+	qlogd
+		qlogd -> qlogd [label="write > read"]
+	qlogd
+	qlogd
+		qlogd -> qlogd [label="append > read"]
+}

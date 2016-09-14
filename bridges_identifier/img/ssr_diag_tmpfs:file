@@ -1,0 +1,6 @@
+// graph_name
+digraph {
+	ssr_diag
+	ssr_diag
+		ssr_diag -> ssr_diag [label="write > read"]
+}

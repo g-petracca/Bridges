@@ -1,0 +1,15 @@
+// graph_name
+digraph {
+	cnd
+	cnd
+		cnd -> cnd [label="open > open"]
+	cnd
+	cnd
+		cnd -> cnd [label="setattr > getattr"]
+	cnd
+	cnd
+		cnd -> cnd [label="write > read"]
+	cnd
+	cnd
+		cnd -> cnd [label="append > read"]
+}

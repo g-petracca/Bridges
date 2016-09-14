@@ -1,0 +1,147 @@
+// graph_name
+digraph {
+	ime_app
+	ime_app
+		ime_app -> ime_app [label="open > open"]
+	ime_app
+	s_system_app
+		s_system_app -> ime_app [label="open > open"]
+	ime_app
+	system_app
+		system_app -> ime_app [label="open > open"]
+	ime_app
+	ime_app
+		ime_app -> ime_app [label="setattr > getattr"]
+	ime_app
+	s_system_app
+		s_system_app -> ime_app [label="setattr > getattr"]
+	ime_app
+	system_app
+		system_app -> ime_app [label="setattr > getattr"]
+	ime_app
+	ime_app
+		ime_app -> ime_app [label="write > read"]
+	ime_app
+	ime_app
+		ime_app -> ime_app [label="append > read"]
+	ime_app
+	s_system_app
+		s_system_app -> ime_app [label="write > read"]
+	ime_app
+	s_system_app
+		s_system_app -> ime_app [label="append > read"]
+	ime_app
+	system_app
+		system_app -> ime_app [label="write > read"]
+	ime_app
+	system_app
+		system_app -> ime_app [label="append > read"]
+	s_system_app
+	ime_app
+		ime_app -> s_system_app [label="open > open"]
+	s_system_app
+	s_system_app
+		s_system_app -> s_system_app [label="open > open"]
+	s_system_app
+	system_app
+		system_app -> s_system_app [label="open > open"]
+	s_system_app
+	ime_app
+		ime_app -> s_system_app [label="setattr > getattr"]
+	s_system_app
+	s_system_app
+		s_system_app -> s_system_app [label="setattr > getattr"]
+	s_system_app
+	system_app
+		system_app -> s_system_app [label="setattr > getattr"]
+	s_system_app
+	ime_app
+		ime_app -> s_system_app [label="write > read"]
+	s_system_app
+	ime_app
+		ime_app -> s_system_app [label="append > read"]
+	s_system_app
+	s_system_app
+		s_system_app -> s_system_app [label="write > read"]
+	s_system_app
+	s_system_app
+		s_system_app -> s_system_app [label="append > read"]
+	s_system_app
+	system_app
+		system_app -> s_system_app [label="write > read"]
+	s_system_app
+	system_app
+		system_app -> s_system_app [label="append > read"]
+	system_app
+	ime_app
+		ime_app -> system_app [label="open > open"]
+	system_app
+	s_system_app
+		s_system_app -> system_app [label="open > open"]
+	system_app
+	system_app
+		system_app -> system_app [label="open > open"]
+	system_app
+	ime_app
+		ime_app -> system_app [label="setattr > getattr"]
+	system_app
+	s_system_app
+		s_system_app -> system_app [label="setattr > getattr"]
+	system_app
+	system_app
+		system_app -> system_app [label="setattr > getattr"]
+	system_app
+	ime_app
+		ime_app -> system_app [label="write > read"]
+	system_app
+	ime_app
+		ime_app -> system_app [label="append > read"]
+	system_app
+	s_system_app
+		s_system_app -> system_app [label="write > read"]
+	system_app
+	s_system_app
+		s_system_app -> system_app [label="append > read"]
+	system_app
+	system_app
+		system_app -> system_app [label="write > read"]
+	system_app
+	system_app
+		system_app -> system_app [label="append > read"]
+	system_server
+	ime_app
+		ime_app -> system_server [label="open > open"]
+	system_server
+	s_system_app
+		s_system_app -> system_server [label="open > open"]
+	system_server
+	system_app
+		system_app -> system_server [label="open > open"]
+	system_server
+	ime_app
+		ime_app -> system_server [label="setattr > getattr"]
+	system_server
+	s_system_app
+		s_system_app -> system_server [label="setattr > getattr"]
+	system_server
+	system_app
+		system_app -> system_server [label="setattr > getattr"]
+	system_server
+	ime_app
+		ime_app -> system_server [label="write > read"]
+	system_server
+	ime_app
+		ime_app -> system_server [label="append > read"]
+	system_server
+	s_system_app
+		s_system_app -> system_server [label="write > read"]
+	system_server
+	s_system_app
+		s_system_app -> system_server [label="append > read"]
+	system_server
+	system_app
+		system_app -> system_server [label="write > read"]
+	system_server
+	system_app
+		system_app -> system_server [label="append > read"]
+}

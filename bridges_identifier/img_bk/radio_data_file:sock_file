@@ -1,0 +1,27 @@
+// graph_name
+digraph {
+	installd
+	installd
+		installd -> installd [label="setattr > getattr"]
+	installd
+	radio
+		radio -> installd [label="setattr > getattr"]
+	installd
+	installd
+		installd -> installd [label="relabelto > relabelfrom"]
+	radio
+	radio
+		radio -> radio [label="open > open"]
+	radio
+	installd
+		installd -> radio [label="setattr > getattr"]
+	radio
+	radio
+		radio -> radio [label="setattr > getattr"]
+	radio
+	radio
+		radio -> radio [label="write > read"]
+	radio
+	radio
+		radio -> radio [label="append > read"]
+}

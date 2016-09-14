@@ -1,0 +1,15 @@
+// graph_name
+digraph {
+	netmgrd
+	netmgrd
+		netmgrd -> netmgrd [label="open > open"]
+	netmgrd
+	netmgrd
+		netmgrd -> netmgrd [label="setattr > getattr"]
+	netmgrd
+	netmgrd
+		netmgrd -> netmgrd [label="write > read"]
+	netmgrd
+	netmgrd
+		netmgrd -> netmgrd [label="append > read"]
+}

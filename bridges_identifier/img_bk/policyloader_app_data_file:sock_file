@@ -1,0 +1,15 @@
+// graph_name
+digraph {
+	policyloader_app
+	policyloader_app
+		policyloader_app -> policyloader_app [label="open > open"]
+	policyloader_app
+	policyloader_app
+		policyloader_app -> policyloader_app [label="setattr > getattr"]
+	policyloader_app
+	policyloader_app
+		policyloader_app -> policyloader_app [label="write > read"]
+	policyloader_app
+	policyloader_app
+		policyloader_app -> policyloader_app [label="append > read"]
+}

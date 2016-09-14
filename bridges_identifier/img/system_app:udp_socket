@@ -1,0 +1,27 @@
+// graph_name
+digraph {
+	fixmo_app
+	fixmo_app
+		fixmo_app -> fixmo_app [label="write > read"]
+	fixmo_app
+	good_app
+		good_app -> fixmo_app [label="write > read"]
+	fixmo_app
+	fixmo_app
+		fixmo_app -> fixmo_app [label="setopt > getopt"]
+	fixmo_app
+	good_app
+		good_app -> fixmo_app [label="setopt > getopt"]
+	good_app
+	fixmo_app
+		fixmo_app -> good_app [label="write > read"]
+	good_app
+	good_app
+		good_app -> good_app [label="write > read"]
+	good_app
+	fixmo_app
+		fixmo_app -> good_app [label="setopt > getopt"]
+	good_app
+	good_app
+		good_app -> good_app [label="setopt > getopt"]
+}

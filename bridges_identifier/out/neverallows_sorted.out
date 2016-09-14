@@ -1,0 +1,10 @@
+neverallow { domain -init -system -ueventd -unconfineddomain -qrngd -mmb_mw -mmb_apk -recovery -exyrngd } hw_random_device:chr_file ~getattr;
+neverallow { domain -rfs_access -kernel -recovery -init -su -init_shell -trusteddomain -containerdomain } rfs_data_file:dir { create reparent rmdir setattr { { open getattr read search ioctl } { open search write add_name remove_name } } { getattr link unlink rename } };
+neverallow { domain -rfs_access -kernel -recovery -init -su -init_shell -trusteddomain -containerdomain } rfs_data_file:file { create setattr { { getattr open read ioctl lock } { open append write } } { getattr link unlink rename } };
+neverallow shell graphics_device:chr_file { read write open };
+neverallow shell kernel:process setsched;
+neverallow shell labeledfs:filesystem remount;
+neverallow shell self:capability { sys_admin };
+neverallow shell system_file:dir { write remove_name add_name };
+neverallow shell system_file:file { write create setattr unlink };
+neverallow shell system_file:lnk_file create;

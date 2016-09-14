@@ -1,0 +1,27 @@
+// graph_name
+digraph {
+	adbd
+	newAttr86
+		newAttr86 -> adbd [label="setattr > getattr"]
+	appdomain
+	newAttr86
+		newAttr86 -> appdomain [label="setattr > getattr"]
+	newAttr86
+	newAttr86
+		newAttr86 -> newAttr86 [label="open > open"]
+	newAttr86
+	newAttr86
+		newAttr86 -> newAttr86 [label="setattr > getattr"]
+	newAttr86
+	newAttr86
+		newAttr86 -> newAttr86 [label="write > read"]
+	newAttr86
+	newAttr86
+		newAttr86 -> newAttr86 [label="append > read"]
+	untrusteddomain
+	newAttr86
+		newAttr86 -> untrusteddomain [label="setattr > getattr"]
+	untrusteddomain
+	newAttr86
+		newAttr86 -> untrusteddomain [label="setattr > getattr"]
+}
